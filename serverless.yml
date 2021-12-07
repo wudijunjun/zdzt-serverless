@@ -1,0 +1,19 @@
+org: orgDemo
+app: zdzt-server
+stage: dev
+component: egg
+name: eggDemo
+
+inputs:
+  src:
+    src: ./
+    exclude:
+      - .env
+  region: ap-shanghai
+  functionName: eggDemo
+  runtime: Nodejs10.15
+  apigatewayConf:
+    protocols:
+      - http
+      - https
+    environment: release
